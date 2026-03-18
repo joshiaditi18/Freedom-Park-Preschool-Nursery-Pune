@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions – Freedom Park Preschool & Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="page-header">
+  <h1>Admissions 🎒</h1>
+  <p>Simple, transparent process — your child's journey starts here</p>
+  <div class="breadcrumb"><a href="index.html">Home</a> › Admissions</div>
+</div>
+
+<section class="section animate-up">
+
+  <!-- STEPS -->
+  <div class="divider"></div>
+  <h2 class="section-title">Admission <span>Process</span></h2>
+  <p class="section-sub">4 easy steps to join the Freedom Park family</p>
+  <div class="steps-row">
+    <div class="step-card animate-up">
+      <div class="step-num">1</div>
+      <div style="font-size:2rem;margin-bottom:10px">📝</div>
+      <h4>Fill Enquiry Form</h4>
+    </div>
+    <div class="step-card animate-up" style="animation-delay:0.1s">
+      <div class="step-num" style="background:linear-gradient(135deg,var(--green),#26A69A)">2</div>
+      <div style="font-size:2rem;margin-bottom:10px">🏫</div>
+      <h4>Visit School</h4>
+    </div>
+    <div class="step-card animate-up" style="animation-delay:0.2s">
+      <div class="step-num" style="background:linear-gradient(135deg,var(--orange),var(--yellow))">3</div>
+      <div style="font-size:2rem;margin-bottom:10px">📁</div>
+      <h4>Submit Documents</h4>
+    </div>
+    <div class="step-card animate-up" style="animation-delay:0.3s">
+      <div class="step-num" style="background:linear-gradient(135deg,var(--pink),var(--purple))">4</div>
+      <div style="font-size:2rem;margin-bottom:10px">💳</div>
+      <h4>Complete Fee Payment</h4>
+    </div>
+  </div>
+
+  <hr style="border:none;border-top:2px solid var(--border);margin:48px 0" />
+
+  <!-- DOCUMENTS -->
+  <div class="divider"></div>
+  <h2 class="section-title">Required <span>Documents</span></h2>
+  <p class="section-sub">Please keep these handy when visiting</p>
+  <div class="docs-grid">
+    <div class="doc-item animate-up">
+      <span class="doc-icon">🎂</span>
+      <span>Birth Certificate</span>
+    </div>
+    <div class="doc-item animate-up">
+      <span class="doc-icon">🪪</span>
+      <span>Aadhar Card of Child &amp; Parents</span>
+    </div>
+    <div class="doc-item animate-up">
+      <span class="doc-icon">📷</span>
+      <span>4 Passport-size Photos</span>
+    </div>
+    <div class="doc-item animate-up">
+      <span class="doc-icon">📋</span>
+      <span>Transfer Certificate (if applicable)</span>
+    </div>
+    <div class="doc-item animate-up">
+      <span class="doc-icon">🏥</span>
+      <span>Medical Records</span>
+    </div>
+  </div>
+
+  <hr style="border:none;border-top:2px solid var(--border);margin:48px 0" />
+
+  <!-- PAYMENT QR -->
+  <div class="divider"></div>
+  <h2 class="section-title">Fee <span>Payment</span></h2>
+  <p class="section-sub">Scan the QR code below to pay admission fees</p>
+
+  <div class="payment-qr-box animate-up">
+    <img src="images/qr-code.jpg" alt="UPI QR Code – HDFC Bank SmartHub Vyapar" style="width:220px;height:auto;border-radius:12px;border:2px solid var(--sky);box-shadow:var(--shadow-sm);" />
+    <p style="margin-top:16px">Scan QR Code to Pay Admission Fees</p>
+    <p style="color:var(--muted);font-size:0.82rem;margin-top:4px">UPI / GPay / PhonePe / Paytm / Cards accepted</p>
+    <p style="color:var(--muted);font-size:0.78rem;margin-top:4px">Powered by HDFC SmartHub Vyapar</p>
+  </div>
+
+  <!-- UPLOAD -->
+  <div class="divider"></div>
+  <h2 class="section-title">Upload <span>Payment Proof</span></h2>
+  <p class="section-sub">After payment, upload your screenshot below to unlock the admission form</p>
+
+  <div class="upload-area animate-up" id="upload-area">
+    <div style="font-size:3rem">📤</div>
+    <p>Click or drag &amp; drop your payment screenshot here</p>
+    <p style="font-size:0.82rem;margin-top:4px">Supported: JPG, PNG, PDF</p>
+  </div>
+  <input type="file" id="payment-proof" accept="image/*,application/pdf" style="display:none" />
+
+  <div style="text-align:center">
+    <a id="download-btn" href="pdf/admission-form.pdf" download="Freedom-Park-Admission-Form.pdf" class="btn btn-primary">
+      📄 Download Admission Form (PDF)
+    </a>
+  </div>
+
+  <hr style="border:none;border-top:2px solid var(--border);margin:48px 0" />
+
+  <!-- ENQUIRY FORM -->
+  <div class="divider"></div>
+  <h2 class="section-title">Enquiry <span>Form</span></h2>
+  <p class="section-sub">Fill in the details and we'll get back to you</p>
+  <div style="max-width:640px;margin:0 auto;background:var(--card-bg);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow-md);" class="animate-up">
+    <form id="enquiry-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label>Parent Name *</label>
+          <input type="text" placeholder="Your full name" required />
+        </div>
+        <div class="form-group">
+          <label>Child's Name *</label>
+          <input type="text" placeholder="Child's full name" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Phone Number *</label>
+          <input type="tel" placeholder="10-digit mobile number" required />
+        </div>
+        <div class="form-group">
+          <label>Child's Age *</label>
+          <input type="text" placeholder="e.g. 2.5 years" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Program Interested In</label>
+        <select>
+          <option value="">-- Select Program --</option>
+          <option>Playgroup (1.5–2.5 years)</option>
+          <option>Nursery (2.5–3.5 years)</option>
+          <option>Junior KG (3.5–4.5 years)</option>
+          <option>Senior KG (4.5–6 years)</option>
+          <option>Daycare (1.5–6 years)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea placeholder="Any questions or special requirements..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">🚀 Submit Enquiry</button>
+    </form>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('enquiry-form');
+    if (form) {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        const btn = form.querySelector('button[type="submit"]');
+        btn.textContent = '✅ Enquiry Submitted!';
+        btn.style.background = 'linear-gradient(135deg,var(--green),#26A69A)';
+        setTimeout(() => { btn.textContent = '🚀 Submit Enquiry'; btn.style.background = ''; form.reset(); }, 3000);
+      });
+    }
+  });
+</script>
+</body>
+</html>

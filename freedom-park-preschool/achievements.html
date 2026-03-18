@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Achievements – Freedom Park Preschool & Nursery</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .ach-slider-wrap { overflow: hidden; border-radius: var(--radius-xl); }
+    .ach-slider { display: flex; transition: transform 0.45s ease; }
+    .ach-slide { min-width: 100%; flex-shrink: 0; box-sizing: border-box; padding: 0 8px; }
+
+    .ach-photo-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      background: #000;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .ach-photo-card img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .ach-photo-card:hover img { transform: scale(1.04); }
+    .ach-photo-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.72));
+      color: #fff;
+      padding: 40px 32px 28px;
+    }
+    .ach-photo-overlay h3 {
+      font-family: var(--font-head);
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .ach-photo-overlay p { opacity: 0.85; font-size: 0.95rem; }
+    .ach-badge {
+      position: absolute;
+      top: 20px; right: 20px;
+      background: linear-gradient(135deg, var(--yellow), var(--orange));
+      color: #fff;
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1rem;
+      padding: 8px 18px;
+      border-radius: 50px;
+      box-shadow: var(--shadow-md);
+    }
+    @media (max-width: 600px) {
+      .ach-photo-card img { height: 260px; }
+      .ach-photo-overlay h3 { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<div class="page-header" style="background:linear-gradient(135deg,#FFD93D 0%,#FF8C42 100%)">
+  <h1 style="color:#1a3a52">Our Achievements 🏆</h1>
+  <p style="color:rgba(26,58,82,0.8)">Proud milestones on our journey of excellence</p>
+  <div class="breadcrumb" style="color:rgba(26,58,82,0.7)"><a href="index.html" style="color:rgba(26,58,82,0.85)">Home</a> › Achievements</div>
+</div>
+
+<section class="section animate-up">
+  <div class="divider"></div>
+  <h2 class="section-title">Our <span>Milestones</span></h2>
+  <p class="section-sub">Celebrating the journey of Freedom Park since 2016</p>
+
+  <div style="position:relative; padding:0 56px; max-width:1000px; margin:0 auto;">
+    <button class="slider-arrow prev ach-prev" style="left:0">&#8592;</button>
+
+    <div class="ach-slider-wrap">
+      <div class="ach-slider">
+
+        <div class="ach-slide">
+          <div class="ach-photo-card">
+            <img src="images/a1.jpeg" alt="Achievement 1 – Creative Farm Activity" />
+            <div class="ach-badge">🌱 Achievement 1</div>
+            <div class="ach-photo-overlay">
+              <h3>Creative Farm Activity</h3>
+              <p>Children built a beautiful farm model with real plants &amp; a handmade scarecrow — learning about nature hands-on.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ach-slide">
+          <div class="ach-photo-card">
+            <img src="images/a2.jpeg" alt="Achievement 2 – Winner & Runner Up Trophies" />
+            <div class="ach-badge">🏆 Achievement 2</div>
+            <div class="ach-photo-overlay">
+              <h3>Winner &amp; Runner Up – RKL Galaxy</h3>
+              <p>Freedom Park clinched both Winner &amp; Runner Up trophies at RKL Galaxy International School's Inter-School Pre-Primary Fun Sport Meet 2024.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ach-slide">
+          <div class="ach-photo-card">
+            <img src="images/a3.jpeg" alt="Achievement 3 – Principal with Trophy" />
+            <div class="ach-badge">🥈 Achievement 3</div>
+            <div class="ach-photo-overlay">
+              <h3>Runner Up – Inter-School Competition</h3>
+              <p>Our principal proudly holds the Runner Up trophy &amp; gold medal from RKL Galaxy's Inter-School Pre-Primary competition — a proud moment for Freedom Park.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ach-slide">
+          <div class="ach-photo-card">
+            <img src="images/a4.jpeg" alt="Achievement 4 – Runner Up 2025-26" />
+            <div class="ach-badge">🥇 Achievement 4</div>
+            <div class="ach-photo-overlay">
+              <h3>Runner Up – Pre-Primary Competition 2025-26</h3>
+              <p>Freedom Park secured Runner Up at RKL Galaxy's Inter-School Pre-Primary Competition 2025-26 held on 16th January 2026.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ach-slide">
+          <div class="ach-photo-card">
+            <img src="images/b1.jpg" alt="Achievement 5 – Winner Team Photo" />
+            <div class="ach-badge">🎖️ Achievement 5</div>
+            <div class="ach-photo-overlay">
+              <h3>Champions Together! 🎉</h3>
+              <p>Our students, teachers &amp; founder celebrate winning the Inter-School Pre-Primary Fun Sport Meet — a proud Freedom Park family moment.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ach-slide">
+          <div class="ach-photo-card">
+            <img src="images/b2.jpg" alt="Achievement 6 – School Partnerships" />
+            <div class="ach-badge">📜 Achievement 6</div>
+            <div class="ach-photo-overlay">
+              <h3>Official School Partnerships</h3>
+              <p>Freedom Park is an Official Preschool Partner of Radcliffe School &amp; holds a Certificate of Collaboration with MIT-World Peace School, Alandi.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <button class="slider-arrow next ach-next" style="right:0">&#8594;</button>
+  </div>
+
+  <div class="slider-dots" id="ach-dots" style="margin-top:24px"></div>
+
+  <div class="ach-highlights animate-up" style="margin-top:52px">
+    <div class="highlight-pill">⭐ Rated 4.7 on Justdial</div>
+    <div class="highlight-pill">💖 Appreciated for caring staff</div>
+    <div class="highlight-pill">🤝 Trusted local preschool</div>
+    <div class="highlight-pill">🏆 Multiple Inter-School Winners</div>
+    <div class="highlight-pill">📜 MIT-WPS &amp; Radcliffe Partner</div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="js/components.js"></script>
+<script src="js/script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.ach-slider');
+    const slides = slider ? slider.querySelectorAll('.ach-slide') : [];
+    const dotsEl = document.querySelector('#ach-dots');
+    let current = 0, timer;
+
+    function goTo(i) {
+      current = (i + slides.length) % slides.length;
+      slider.style.transform = `translateX(-${current * 100}%)`;
+      if (dotsEl) dotsEl.querySelectorAll('.dot').forEach((d, idx) => d.classList.toggle('active', idx === current));
+    }
+
+    if (dotsEl) {
+      slides.forEach((_, i) => {
+        const d = document.createElement('button');
+        d.className = 'dot' + (i === 0 ? ' active' : '');
+        d.addEventListener('click', () => { goTo(i); clearInterval(timer); timer = setInterval(() => goTo(current + 1), 3500); });
+        dotsEl.appendChild(d);
+      });
+    }
+
+    document.querySelector('.ach-prev').addEventListener('click', () => { goTo(current - 1); clearInterval(timer); timer = setInterval(() => goTo(current + 1), 3500); });
+    document.querySelector('.ach-next').addEventListener('click', () => { goTo(current + 1); clearInterval(timer); timer = setInterval(() => goTo(current + 1), 3500); });
+    timer = setInterval(() => goTo(current + 1), 3500);
+  });
+</script>
+</body>
+</html>
